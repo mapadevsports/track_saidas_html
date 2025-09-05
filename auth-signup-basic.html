@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
-    <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
     <!-- Layout config Js -->
@@ -66,95 +65,73 @@
                                 </div>
 
                                 <div class="p-2 mt-4">
-                                    <!-- Removemos action e adicionamos id para JS -->
                                     <form id="signup-form" class="needs-validation" novalidate>
                                         <div class="mb-3">
-                                            <label for="useremail" class="form-label">Email <span
-                                                    class="text-danger">*</span></label>
+                                            <label for="useremail" class="form-label">Email <span class="text-danger">*</span></label>
                                             <input type="email" class="form-control" id="useremail"
                                                 placeholder="Digite um endereço de email" required>
                                             <div class="invalid-feedback">Informe um email válido.</div>
                                         </div>
 
                                         <div class="mb-3">
-                                            <label for="username" class="form-label">Nome de usuário <span
-                                                    class="text-danger">*</span></label>
+                                            <label for="username" class="form-label">Nome de usuário <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="username"
                                                 placeholder="Digite seu usuário" required>
                                             <div class="invalid-feedback">Informe um nome de usuário.</div>
                                         </div>
 
-                                        <!-- Novo campo: Contato -->
                                         <div class="mb-3">
-                                            <label for="contato" class="form-label">Contato <span
-                                                    class="text-danger">*</span></label>
+                                            <label for="contato" class="form-label">Contato <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="contato"
                                                 placeholder="WhatsApp, telefone ou outro contato" required>
                                             <div class="invalid-feedback">Informe um contato.</div>
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label" for="password-input">Senha <span
-                                                    class="text-danger">*</span></label>
+                                            <label class="form-label" for="senha-input">Senha <span class="text-danger">*</span></label>
                                             <div class="position-relative auth-pass-inputgroup">
-                                                <!-- pattern CORRIGIDO: uma barra \d -->
-                                                <input type="password" class="form-control pe-5 password-input"
+                                                <input type="password" class="form-control pe-5 senha-input"
                                                     onpaste="return false" placeholder="Escolha uma senha"
-                                                    id="password-input" aria-describedby="passwordInput"
+                                                    id="senha-input" aria-describedby="senhaHelp"
                                                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                                    autocomplete="new-password"
-                                                    required>
+                                                    autocomplete="new-password" required>
                                                 <button
-                                                    class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon material-shadow-none"
-                                                    type="button" id="password-addon"><i
-                                                        class="ri-eye-fill align-middle"></i></button>
-                                                <div class="invalid-feedback">A senha deve ter pelo menos 8 caracteres,
-                                                    com letras maiúsculas, minúsculas e números.</div>
+                                                    class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted material-shadow-none"
+                                                    type="button" id="senha-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                <div class="invalid-feedback">
+                                                    A senha deve ter pelo menos 8 caracteres, com letras maiúsculas, minúsculas e números.
+                                                </div>
                                             </div>
                                         </div>
 
                                         <div class="mb-4">
-                                            <p class="mb-0 fs-12 text-muted fst-italic">Ao registrar, você concorda com
-                                                os <a href="#"
-                                                    class="text-primary text-decoration-underline fst-normal fw-medium">Termos
-                                                    de Uso</a></p>
+                                            <p class="mb-0 fs-12 text-muted fst-italic">
+                                                Ao registrar, você concorda com os
+                                                <a href="#" class="text-primary text-decoration-underline fst-normal fw-medium">Termos de Uso</a>
+                                            </p>
                                         </div>
 
                                         <div id="password-contain" class="p-3 bg-light mb-2 rounded">
                                             <h5 class="fs-13">A senha deve conter:</h5>
-                                            <p id="pass-length" class="invalid fs-12 mb-2">No mínimo <b>8 caracteres</b>
-                                            </p>
-                                            <p id="pass-lower" class="invalid fs-12 mb-2">Pelo menos <b>uma letra
-                                                    minúscula</b> (a-z)</p>
-                                            <p id="pass-upper" class="invalid fs-12 mb-2">Pelo menos <b>uma letra
-                                                    maiúscula</b> (A-Z)</p>
-                                            <p id="pass-number" class="invalid fs-12 mb-0">Pelo menos <b>um número</b>
-                                                (0-9)</p>
+                                            <p id="pass-length" class="invalid fs-12 mb-2">No mínimo <b>8 caracteres</b></p>
+                                            <p id="pass-lower" class="invalid fs-12 mb-2">Pelo menos <b>uma letra minúscula</b> (a-z)</p>
+                                            <p id="pass-upper" class="invalid fs-12 mb-2">Pelo menos <b>uma letra maiúscula</b> (A-Z)</p>
+                                            <p id="pass-number" class="invalid fs-12 mb-0">Pelo menos <b>um número</b> (0-9)</p>
                                         </div>
 
                                         <div class="mt-4">
-                                            <button id="signup-btn" class="btn btn-success w-100" type="submit">Sign
-                                                Up</button>
+                                            <button id="signup-btn" class="btn btn-success w-100" type="submit">Sign Up</button>
                                         </div>
 
                                         <div class="mt-4 text-center">
                                             <div class="signin-other-title">
                                                 <h5 class="fs-13 mb-4 title text-muted">Crie uma conta com</h5>
                                             </div>
-
                                             <div>
-                                                <button type="button"
-                                                    class="btn btn-primary btn-icon waves-effect waves-light"><i
-                                                        class="ri-facebook-fill fs-16"></i></button>
-                                                <button type="button"
-                                                    class="btn btn-danger btn-icon waves-effect waves-light"><i
-                                                        class="ri-google-fill fs-16"></i></button>
-                                                <button type="button"
-                                                    class="btn btn-dark btn-icon waves-effect waves-light"><i
-                                                        class="ri-github-fill fs-16"></i></button>
-                                                <button type="button"
-                                                    class="btn btn-info btn-icon waves-effect waves-light"><i
-                                                        class="ri-twitter-fill fs-16"></i></button>
+                                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light"><i class="ri-facebook-fill fs-16"></i></button>
+                                                <button type="button" class="btn btn-danger btn-icon waves-effect waves-light"><i class="ri-google-fill fs-16"></i></button>
+                                                <button type="button" class="btn btn-dark btn-icon waves-effect waves-light"><i class="ri-github-fill fs-16"></i></button>
+                                                <button type="button" class="btn btn-info btn-icon waves-effect waves-light"><i class="ri-twitter-fill fs-16"></i></button>
                                             </div>
                                         </div>
                                     </form>
@@ -184,8 +161,8 @@
                     <div class="col-lg-12">
                         <div class="text-center">
                             <p class="mb-0 text-muted">&copy;
-                                <script>document.write(new Date().getFullYear())</script> Velzon. Crafted with <i
-                                    class="mdi mdi-heart text-danger"></i> by Themesbrand
+                                <script>document.write(new Date().getFullYear())</script> Velzon. Crafted with
+                                <i class="mdi mdi-heart text-danger"></i> by Themesbrand
                             </p>
                         </div>
                     </div>
@@ -206,19 +183,25 @@
 
     <!-- particles js -->
     <script src="assets/libs/particles.js/particles.js"></script>
-    <!-- particles app js -->
     <script src="assets/js/pages/particles.app.js"></script>
-    <!-- validation init -->
-    <script src="assets/js/pages/form-validation.init.js"></script>
-    <!-- password create init -->
-    <script src="assets/js/pages/passowrd-create.init.js"></script>
 
-    <!-- POST do formulário -->
+    <!-- Validação e POST -->
     <script>
-        // Endpoint real da sua API (já com trailing slash, como você enviou)
+        // Endpoint da API
         const SIGNUP_URL = "https://track-saidas-api.onrender.com/api/users/";
 
-        // Intercepta o submit do formulário
+        // Toggle de visibilidade da senha (olhinho)
+        (function () {
+            const input = document.getElementById("senha-input");
+            const btn = document.getElementById("senha-addon");
+            if (input && btn) {
+                btn.addEventListener("click", () => {
+                    input.type = input.type === "password" ? "text" : "password";
+                });
+            }
+        })();
+
+        // Intercepta o submit
         document.getElementById("signup-form").addEventListener("submit", async (e) => {
             e.preventDefault();
 
@@ -231,7 +214,7 @@
             const email = document.getElementById("useremail").value.trim();
             const username = document.getElementById("username").value.trim();
             const contato = document.getElementById("contato").value.trim();
-            const password = document.getElementById("password-input").value;
+            const senha = document.getElementById("senha-input").value;
 
             const btn = document.getElementById("signup-btn");
             const originalText = btn.innerText;
