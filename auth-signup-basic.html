@@ -241,7 +241,7 @@
                 const resp = await fetch(SIGNUP_URL, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ email, username, password, contato })
+                    body: JSON.stringify({ email, username, senha, contato })
                 });
 
                 if (resp.ok) {
